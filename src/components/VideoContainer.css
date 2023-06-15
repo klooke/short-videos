@@ -1,0 +1,8 @@
+.Video_Container {
+    height: 100vh;
+    max-height: 800px;
+    width: 100vh;
+    max-width: 500px;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
