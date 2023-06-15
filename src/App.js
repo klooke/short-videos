@@ -1,12 +1,10 @@
 import "./App.css";
 import VideoContainer from "./components/VideoContainer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <VideoContainer />
     </div>
   );
 }
-
-export default App;

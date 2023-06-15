@@ -1,11 +1,13 @@
-import React from 'react'
-import './VideoContainer.css'
+import React from "react";
+import Video from "./Video";
+import "./VideoContainer.css";
 
-function VideoContainer() {
+export default function VideoContainer() {
   return (
-    <div className='Video_Container'>
+    <div className="Video_Container">
+      <Video />
+      <Video />
+      <Video />
     </div>
-  )
+  );
 }
-
-export default VideoContainer
