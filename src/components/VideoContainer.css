@@ -1,8 +1,18 @@
 .Video_Container {
     height: 100vh;
     max-height: 800px;
-    width: 100vh;
     max-width: 500px;
-    border: 1px solid white;
     border-radius: 20px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+  
+    /* Esconde a barra no IE, Edge e Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+  
+  /* Esconde a barra no Chrome, Safari e Opera*/
+  .Video_Container::-webkit-scrollbar {
+    display: none;
+  }
+  

@@ -2,5 +2,6 @@
     height: 100%;
     width: 100%;
     object-fit: fill;
+    scroll-snap-align: start;
     position: relative;
 }
