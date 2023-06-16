@@ -1,7 +1,12 @@
 .Video {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-    scroll-snap-align: start;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.Video_Content {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }

@@ -1,18 +1,19 @@
 .Video_Container {
-    height: 100vh;
-    max-height: 800px;
-    max-width: 500px;
-    border-radius: 20px;
-    overflow: scroll;
-    scroll-snap-type: y mandatory;
+  height: 100vh;
+  max-height: 800px;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  position: relative;
+
+  /* Esconde a barra no IE, Edge e Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
   
-    /* Esconde a barra no IE, Edge e Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  /* Esconde a barra no Chrome, Safari e Opera*/
-  .Video_Container::-webkit-scrollbar {
-    display: none;
-  }
+/* Esconde a barra no Chrome, Safari e Opera*/
+.Video_Container::-webkit-scrollbar {
+  display: none;
+}
   
