@@ -16,6 +16,22 @@
   overflow: hidden;
 }
 
+.Description_Music #nameMusic p{
+  animation: nameMusicRunning 5s infinite linear;
+}
+
 .Description_Music #diskSpinning {
+  animation: diskSpinning 3s infinite linear;
   height: 48px;
+  filter: invert(1);
+}
+
+@keyframes nameMusicRunning {
+  0% { transform: translate(100%); }
+  100% { transform: translate(-100%);}
+}
+
+@keyframes diskSpinning {
+  0% { transform: rotate(0deg); } 
+  100% { transform: rotate(360deg); } 
 }
