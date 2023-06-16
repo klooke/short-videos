@@ -1,0 +1,21 @@
+.Video_Footer {
+  width: 96%;
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+}
+
+.Description_Music {
+  display: flex;
+  align-items: center;
+}
+
+.Description_Music #nameMusic {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Description_Music #diskSpinning {
+  height: 48px;
+}

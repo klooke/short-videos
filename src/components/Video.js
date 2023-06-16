@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import VideoFooter from "./VideoFooter";
 import "./Video.css";
 
 export default function Video() {
@@ -16,13 +17,14 @@ export default function Video() {
 
   return (
     <div className="Video">
-    <video
+      <video
         className="Video_Content"
-      ref={videoRef}
-      onClick={onVideoClick}
-      src="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z"
-      loop
-    ></video>
+        ref={videoRef}
+        onClick={onVideoClick}
+        src="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z"
+        loop
+      ></video>
+      <VideoFooter />
     </div>
   );
 }
