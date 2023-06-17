@@ -2,15 +2,15 @@ import React from "react"
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import "./VideoFooter.css"
 
-export default function VideoFooter() {
+export default function VideoFooter({user, description, music}) {
   return (
     <div className="Video_Footer">
-      <h3>@Usuário</h3>
-      <p>Descrição do vídeo.</p>
+      <h3>{ user }</h3>
+      <p> { description }</p>
       <div className="Description_Music">
         <MusicNoteIcon />
         <div id="nameMusic">
-          <p>Nome da música</p>
+          <p>{ music }</p>
         </div>
         <img
          id="diskSpinning"
