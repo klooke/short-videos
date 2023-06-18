@@ -1,34 +1,27 @@
-import "./App.css";
+import React, { useEffect, useState } from "react";
 import VideoContainer from "./components/VideoContainer";
+import db from "./config/firebase"
+import "./App.css";
+import { collection, getDocs } from "firebase/firestore/lite";
 
 export default function App() {
-  const videoPropA = {
-    url: "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4?t=2023-05-22T19%3A37%3A45.885Z",
-    user: "@Usuário A",
-    description: "Descrição do video A.",
-    music: "Título da música A.",
-    likes: 111,
-    messages: 222,
-    shares: 333
+  const [videosProps, setVideos] = useState([]);
+
+  async function getVideos(db) {
+    const videos = collection(db, "Videos");
+    const videosDocs = await getDocs(videos);
+    const videosProps = videosDocs.docs.map(doc => doc.data());
+    setVideos(videosProps);
   }
 
-  const videoPropB = {
-    url: "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/bird.mp4?t=2023-05-22T19%3A40%3A47.052Z",
-    user: "@Usuário B",
-    description: "Descrição do video B.",
-    music: "Título da música B.",
-    likes: 444,
-    messages: 555,
-    shares: 666
-  }
+  useEffect(() => {
+    getVideos(db);
+  }, [])
 
   return (
     <div className="App">
       <VideoContainer      
-        videosProps={[
-          videoPropA,
-          videoPropB
-        ]}
+        videosProps={videosProps}
       />
     </div>
   );
