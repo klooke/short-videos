@@ -1,7 +1,6 @@
 .Video_Container {
   height: 100vh;
   max-height: 880px;
-  width: 100%;
   max-width: 440px;
   border-radius: 20px;
   overflow: scroll;
@@ -16,4 +15,10 @@
 /* Esconde a barra no Chrome, Safari e Opera*/
 .Video_Container::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 440px) {
+  .Video_Container {
+    width: 100%;
+  }
 }
