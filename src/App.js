@@ -20,9 +20,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <VideoContainer      
-        videosProps={videosProps}
-      />
+      <VideoContainer videosProps={videosProps} />
     </div>
   );
 }

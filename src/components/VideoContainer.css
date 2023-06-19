@@ -1,7 +1,8 @@
 .Video_Container {
   height: 100vh;
-  max-height: 800px;
-  max-width: 500px;
+  max-height: 880px;
+  width: 100%;
+  max-width: 440px;
   border-radius: 20px;
   overflow: scroll;
   scroll-snap-type: y mandatory;
@@ -16,4 +17,3 @@
 .Video_Container::-webkit-scrollbar {
   display: none;
 }
-  
