@@ -22,7 +22,7 @@ export default function VideoSide({likes, messages, shares}) {
       >
         { 
           isLiked ? 
-          <FavoriteIcon fontSize="large"/> :
+          <FavoriteIcon fontSize="large" color="error" /> :
           <FavoriteBorderIcon fontSize="large"/>
         }
         <p>{ isLiked ? likes + 1 : likes }</p>

@@ -3,5 +3,10 @@
   position: absolute;
   text-align: center;
   top: 50%;
-  right: 2%;
+  right: 4%;
+}
+
+.Video_Side p {
+  margin-top: 0px;
+  margin-bottom: 100%;
 }
