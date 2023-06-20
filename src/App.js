@@ -5,8 +5,9 @@ import "./App.css";
 import { collection, getDocs } from "firebase/firestore/lite";
 
 export default function App() {
+  const maxHeight = window.innerHeight < 880 ? window.innerHeight : null;
   const [videosProps, setVideos] = useState([]);
-
+  
   async function getVideos(db) {
     const videos = collection(db, "Videos");
     const videosDocs = await getDocs(videos);
@@ -19,7 +20,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div className="App" style={{ maxHeight: maxHeight + "px" }}>
       <VideoContainer videosProps={videosProps} />
     </div>
   );
