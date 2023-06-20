@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import VideoSide from "./VideoSide";
 import VideoFooter from "./VideoFooter";
 import "./Video.css";
+import VideoHeader from "./VideoHeader";
 
 export default function Video({videoProp, autoPlay}) {
   const videoRef = useRef();
@@ -26,6 +27,9 @@ export default function Video({videoProp, autoPlay}) {
         autoPlay={autoPlay}
         loop
       ></video>
+      <VideoHeader 
+        isRunning={isRunning}
+      />
       <VideoSide 
         likes={videoProp.likes}
         messages={videoProp.messages}
