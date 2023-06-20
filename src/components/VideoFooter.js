@@ -1,11 +1,17 @@
 import React from "react"
-import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import "./VideoFooter.css"
+
+// Icon
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 
 export default function VideoFooter({user, description, music}) {
   return (
     <div className="Video_Footer">
-      <h3>{ user }</h3>
+      <h3>
+        <AccountCircleIcon fontSize="large" />
+        { user }
+      </h3>
       <p> { description }</p>
       <div className="Description_Music">
         <MusicNoteIcon />
