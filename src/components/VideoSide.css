@@ -10,3 +10,9 @@
   margin-top: 0px;
   margin-bottom: 100%;
 }
+
+@media only screen and (max-height: 680px) {
+  .Video_Side {
+    right: 2.5%;
+  }
+}

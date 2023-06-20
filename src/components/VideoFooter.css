@@ -40,7 +40,7 @@
   100% { transform: rotate(360deg); } 
 }
 
-@media only screen and (max-height: 660px) {
+@media only screen and (max-height: 680px) {
   .Description_Music #diskSpinning {
     height: 32px;
   }

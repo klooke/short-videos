@@ -11,7 +11,7 @@
   object-fit: fill;
 }
 
-@media only screen and (max-height: 660px) {
+@media only screen and (max-height: 680px) {
   * {
     font-size: small;
   }
