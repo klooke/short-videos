@@ -3,11 +3,11 @@ import VideoSide from "./VideoSide";
 import VideoFooter from "./VideoFooter";
 import "./Video.css";
 
-export default function Video({videoProp}) {
+export default function Video({videoProp, autoPlay}) {
   const videoRef = useRef();
-  const [isRunning, setPlayState] = useState(false);
+  const [isRunning, setPlayState] = useState(autoPlay);
 
-  function onVideoClick() {
+  function onClick() {
     if (isRunning) {
       videoRef.current.pause();
     } else {
@@ -15,14 +15,15 @@ export default function Video({videoProp}) {
     }
     setPlayState(!isRunning);
   }
-  
+
   return (
     <div className="Video">
       <video
         className="Video_Content"
         ref={videoRef}
-        onClick={onVideoClick}
+        onClick={onClick}
         src={videoProp.url}
+        autoPlay={autoPlay}
         loop
       ></video>
       <VideoSide 
