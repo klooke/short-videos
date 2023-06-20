@@ -7,8 +7,7 @@ import PauseIcon from '@mui/icons-material/Pause';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 
-export default function VideoHeader({isRunning, isMuted, onSoundClick}) {
-  
+export default function VideoHeader({isRunning, isMuted, onSoundClick}) { 
   return (
     <div className="Video_Header">
       <div className="VideoHeader_IsRunning">

@@ -20,9 +20,9 @@ export default function Video({videoProp, autoPlay}) {
 
   function onSoundClick() {
     if (isMuted) {
-      videoRef.current.volume = 0.0;
-    } else {
       videoRef.current.volume = 1.0;
+    } else {
+      videoRef.current.volume = 0.0;
     }
     setSoundState(!isMuted);
   }
