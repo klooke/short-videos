@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./VideoSide.css"
 
-/* Icons */
+// Icons
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -22,8 +22,8 @@ export default function VideoSide({likes, messages, shares}) {
       >
         { 
           isLiked ? 
-          <FavoriteIcon fontSize="large" color="error" /> :
-          <FavoriteBorderIcon fontSize="large"/>
+            <FavoriteIcon fontSize="large" color="error" /> :
+            <FavoriteBorderIcon fontSize="large"/>
         }
         <p>{ isLiked ? likes + 1 : likes }</p>
       </div>

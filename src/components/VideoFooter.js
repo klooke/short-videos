@@ -14,7 +14,7 @@ export default function VideoFooter({user, description, music}) {
       </h3>
       <p> { description }</p>
       <div className="Description_Music">
-        <MusicNoteIcon />
+        <MusicNoteIcon fontSize="large" />
         <div id="nameMusic">
           <p>{ music }</p>
         </div>
