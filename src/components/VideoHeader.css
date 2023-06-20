@@ -1,5 +1,11 @@
-.Video_Header {
+.VideoHeader_IsRunning {
   position: absolute;
   top: 2%;
   left: 2%;
+}
+
+.VideoHeader_IsMuted {
+  position: absolute;
+  top: 2%;
+  right: 2%;
 }
